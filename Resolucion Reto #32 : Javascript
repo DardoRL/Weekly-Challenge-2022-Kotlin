@@ -1,0 +1,10 @@
+let listaNumeros=[];
+alert("Por favor ingrese una lista 10 numeros enteros:")
+for (let i = 0; i < 10; i++) {
+    numbers = prompt(`Ingrese el numero ${i+1} de la lista`);
+    listaNumeros.push(numbers);
+}
+function deMenorAMayor(elem1, elem2) {return elem1-elem2;}
+listaNumeros.sort(deMenorAMayor);
+console.log(listaNumeros);
+console.log(`El segundo mayor numero es: ${listaNumeros[8]}`)
